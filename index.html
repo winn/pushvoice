@@ -19,6 +19,12 @@
         <source  src="" type="audio/ogg" >
         Your browser does not support the audio element.
     </audio>
+    <p id="p1"></p>
+
+    <script>
+    document.getElementById("p1").innerHTML = "Hello";
+    </script>
+
 
 
     <script type="module">
@@ -55,6 +61,7 @@
             var html = '';
             console.log(data['audio_url'])
             document.getElementById('displayvoice').src = data['audio_url'];
+            document.getElementById("p1").innerHTML = data['audio_url'];
 
         })
 
